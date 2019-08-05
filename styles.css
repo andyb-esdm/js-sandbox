@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.control-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    max-height: 800px;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.control-container.focus {
+    border: 2px solid rgb(73, 144, 226);
+}
+
+
+.status {
+    background-color: lightgray;
+    text-align: right;
+    border-radius: 0 0 5px 5px;
+    color: rgb(121, 144, 174);
+    padding: 3px 5px;
+    font-weight: bold;
+}
+
+.control {
+    width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px 5px 0 0;
+    font-size: 1rem;
+    resize: vertical;
+    color: rgb(100, 100, 100);
+}
+
+.control:focus {
+    outline: none;
+}
+
+.control::placeholder {
+    opacity: 0.8;
+}
+
+.btn {
+    width: 100%;
+    background-color: rgb(90, 190, 90);
+    border: 2px solid rgb(90, 190, 90);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: .7rem 1rem;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: rgb(100, 210, 100);
+    border: 2px solid rgb(100, 210, 100);
+}
+
+.btn:focus {
+    outline: none;
+    border: 2px solid rgb(70, 180, 70);
+}
