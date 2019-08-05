@@ -103,23 +103,40 @@ let output = '';
 annualProjects.forEach((project) => {
     output += `
     <li class="list-group-item">
-        <div class="row">
-            <div class="col-md-5 order-1">
-                <strong>Site</strong> ${project.siteName} (${project.siteNumber})
-            </div>
-            <div class="col-md-5 order-3">
-                <strong>Financial Year</strong> ${project.financialYear}
-            </div>
-            <div class="col-md-5 order-2 order-md-3">
-                    <strong>Project</strong> ${project.projectCode} - ${project.projectName}
+       <div class="row">
+            <div class="col-md-5">
+                <div>
+                    <h3>
+                        ${project.siteName} (${project.siteNumber})
+                    </h3>
                 </div>
-            <div class="col-md-5 order-4">
-                <strong>Status</strong> ${project.status}
             </div>
-            <div class="col-md-2 order-5">
-                <button class="btn btn-primary float-right">Details</button>
+            <div claas="col-md-5">
+                <h3>
+                    <div>
+                        ${project.projectCode} - ${project.projectName}
+                    </div>
+                </h3>
+            </div>
+            <div claas="col-md-2">
+                ${project .status}
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <strong>Financial Year</strong> ${project.financialYear}
+            </div>
+        </div>
+            
+        <div class="row">
+                <div class="col-md-8">
+                    <strong>Status</strong> ${project.status}
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary float-right">Details</button>
+                </div>
+        </div>
+
     </li>
     `;
 });
