@@ -103,22 +103,22 @@ let output = '';
 annualProjects.forEach((project) => {
     output += `
     <li class="list-group-item">
-       <div class="row">
-            <div class="col-md-5">
+        <div class="row">
+            <div class="col-md-6">
                 <div>
-                    <h3>
+                    <h4>
                         ${project.siteName} (${project.siteNumber})
-                    </h3>
+                    </h4>
                 </div>
             </div>
             <div claas="col-md-5">
-                <h3>
+                <h4>
                     <div>
                         ${project.projectCode} - ${project.projectName}
                     </div>
-                </h3>
+                </h4>
             </div>
-            <div claas="col-md-2">
+            <div claas="col-md-1">
                 ${project .status}
             </div>
         </div>
