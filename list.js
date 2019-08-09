@@ -104,26 +104,24 @@ annualProjects.forEach((project) => {
     output += `
     <li class="list-group-item">
         <div class="row">
-            <div class="col-md-4">
-                <h4>
-                    ${project.siteName} (${project.siteNumber})
-                </h4>
+            <div class="col-md-5">
+                <h5>
+                    ${project.projectCode} - ${project.projectName}
+                </h5>
             </div>
             <div class="col-md-5">
-                <h4>
-                    ${project.projectCode} - ${project.projectName}
-                </h4>
+                <h5>
+                    ${project.siteName} (${project.siteNumber})
+                </h5>
             </div>
-            <div class="col-md-2">
-                ${project .status}
-            </div>
+            
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <strong>Financial Year</strong> ${project.financialYear}
+            <div class="col-md-5">
+                ${new Date(project.financialYear).getFullYear()}
             </div>
             <div class="col-md-5">
-                    <strong>Status</strong> ${project.status}
+                    ${project.status}
                 </div>
             <div class="col-md-2">
                 <button class="btn btn-primary float-right">Details</button>
